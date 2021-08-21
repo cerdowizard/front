@@ -315,7 +315,7 @@
             console.log("server error");
           }
         };
-        h.open("POST", "http://127.0.0.1:8000/api/contact/create");
+        h.open("POST", "https://hng-stage2-task.herokuapp.com");
         h.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         h.send("name=" + name + "&email=" + email + "&message=" + message);
       }
